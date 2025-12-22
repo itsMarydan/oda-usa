@@ -1,0 +1,98 @@
+{
+  "featured": [
+    {
+      "id": "dialysis-center",
+      "title": "Dialysis Center Project",
+      "shortDescription": "Partnering with Ekhoruioyemen Nation Advancement Worldwide (ENAW) to establish a life-saving dialysis center in Okpella.",
+      "fullDescription": "This critical healthcare initiative will provide accessible dialysis treatment to community members, reducing the need for long-distance travel for life-saving care. The project represents a major step forward in healthcare infrastructure for Okpella.",
+      "status": "In Progress",
+      "category": "Healthcare",
+      "impact": "Will serve hundreds of patients annually, providing essential kidney care services",
+      "partnerships": ["Ekhoruioyemen Nation Advancement Worldwide (ENAW)"],
+      "needsSupport": true,
+      "donationAllocation": "dialysis-center",
+      "images": [
+        "/images/projects/dialysis-1.jpg",
+        "/images/projects/dialysis-2.jpg"
+      ],
+      "updates": [
+        {
+          "date": "2024-Q1",
+          "title": "Partnership Established",
+          "description": "Formal partnership with ENAW confirmed to move project forward."
+        }
+      ]
+    },
+    {
+      "id": "community-library",
+      "title": "Okpella Community Library",
+      "shortDescription": "Supporting the development and operations of a community library to promote education and literacy.",
+      "fullDescription": "The Okpella Community Library serves as an educational hub for students, researchers, and lifelong learners. ODA-USA is committed to supporting staffing, security, operational costs, and resource acquisition to ensure the library remains a valuable community asset.",
+      "status": "Operational - Needs Support",
+      "category": "Education",
+      "impact": "Serves over 500 students and community members monthly",
+      "needs": [
+        "Staffing support",
+        "Security personnel",
+        "Operational funding",
+        "Book and resource donations",
+        "Technology and computer equipment"
+      ],
+      "needsSupport": true,
+      "donationAllocation": "library",
+      "images": [
+        "/images/projects/library-1.jpg",
+        "/images/projects/library-2.jpg"
+      ]
+    },
+    {
+      "id": "welfare-assistance",
+      "title": "Welfare Assistance Program",
+      "shortDescription": "Providing direct support to community members facing hardship, illness, or emergency situations.",
+      "fullDescription": "Our Welfare Assistance Program demonstrates our commitment to caring for our community members during challenging times. We provide financial assistance, medical support, and emergency aid to those in need.",
+      "status": "Ongoing",
+      "category": "Social Welfare",
+      "impact": "Has supported over 200 families with emergency assistance",
+      "needsSupport": true,
+      "donationAllocation": "welfare",
+      "images": [
+        "/images/projects/welfare-1.jpg"
+      ]
+    },
+    {
+      "id": "scholarships",
+      "title": "Education & Scholarships",
+      "shortDescription": "Investing in the future through educational scholarships and youth development programs.",
+      "fullDescription": "Education is the foundation of community advancement. Through our scholarship program, we support deserving students pursuing higher education and vocational training, ensuring that financial barriers don't prevent talented young people from achieving their potential.",
+      "status": "Ongoing",
+      "category": "Education",
+      "impact": "50+ scholarships awarded since founding",
+      "needsSupport": true,
+      "donationAllocation": "scholarships",
+      "images": [
+        "/images/projects/education-1.jpg"
+      ]
+    },
+    {
+      "id": "cultural-promotion",
+      "title": "Cultural Promotion Initiatives",
+      "shortDescription": "Preserving and celebrating Okpella heritage through cultural events, showcases, and documentation.",
+      "fullDescription": "Our cultural initiatives ensure that Okpella traditions, language, music, dance, and customs are preserved and passed on to future generations. We organize cultural showcases, festivals, and educational programs that celebrate our rich heritage.",
+      "status": "Ongoing",
+      "category": "Culture & Heritage",
+      "impact": "Annual cultural events attended by 300+ community members",
+      "activities": [
+        "Annual Okpella Cultural Day",
+        "Traditional dance performances",
+        "Language preservation programs",
+        "Heritage documentation projects"
+      ],
+      "needsSupport": true,
+      "donationAllocation": "culture",
+      "images": [
+        "/images/projects/culture-1.jpg",
+        "/images/projects/culture-2.jpg"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "main": [
+    {
+      "label": "Home",
+      "href": "/",
+      "description": "Return to homepage"
+    },
+    {
+      "label": "About",
+      "href": "/about",
+      "description": "Learn about ODA-USA"
+    },
+    {
+      "label": "Community Library",
+      "href": "/library",
+      "description": "Okpella Community Library",
+      "featured": true
+    },
+    {
+      "label": "Projects",
+      "href": "/projects",
+      "description": "Our community initiatives"
+    },
+    {
+      "label": "Membership",
+      "href": "/membership",
+      "description": "Join our community"
+    },
+    {
+      "label": "Donate",
+      "href": "/donate",
+      "description": "Support our work"
+    },
+    {
+      "label": "Culture",
+      "href": "/culture",
+      "description": "Okpella heritage and traditions"
+    },
+    {
+      "label": "Events",
+      "href": "/events",
+      "description": "Upcoming and past events"
+    },
+    {
+      "label": "Contact",
+      "href": "/contact",
+      "description": "Get in touch"
+    }
+  ],
+  "cta": [
+    {
+      "label": "Donate",
+      "href": "/donate",
+      "primary": true,
+      "description": "Support our projects"
+    },
+    {
+      "label": "Become a Member",
+      "href": "/membership",
+      "primary": false,
+      "description": "Join ODA-USA"
+    }
+  ],
+  "footer": {
+    "quickLinks": [
+      {
+        "label": "About ODA-USA",
+        "href": "/about"
+      },
+      {
+        "label": "Community Library",
+        "href": "/library"
+      },
+      {
+        "label": "Projects",
+        "href": "/projects"
+      },
+      {
+        "label": "Membership",
+        "href": "/membership"
+      }
+    ],
+    "resources": [
+      {
+        "label": "Donate",
+        "href": "/donate"
+      },
+      {
+        "label": "Events",
+        "href": "/events"
+      },
+      {
+        "label": "Culture & Heritage",
+        "href": "/culture"
+      },
+      {
+        "label": "Contact Us",
+        "href": "/contact"
+      }
+    ]
+  }
+}

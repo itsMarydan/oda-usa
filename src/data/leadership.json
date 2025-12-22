@@ -1,0 +1,92 @@
+{
+  "executiveCommittee": [
+    {
+      "id": "president",
+      "position": "President",
+      "name": "[Insert President Name]",
+      "bio": "Leading ODA-USA with vision and dedication to community development.",
+      "image": "/images/leadership/placeholder-president.jpg",
+      "term": "2024-2026"
+    },
+    {
+      "id": "vp",
+      "position": "Vice President",
+      "name": "[Insert VP Name]",
+      "bio": "Supporting organizational initiatives and member engagement.",
+      "image": "/images/leadership/placeholder-vp.jpg",
+      "term": "2024-2026"
+    },
+    {
+      "id": "secretary",
+      "position": "General Secretary",
+      "name": "[Insert Secretary Name]",
+      "bio": "Managing communications and organizational documentation.",
+      "image": "/images/leadership/placeholder-secretary.jpg",
+      "term": "2024-2026"
+    },
+    {
+      "id": "treasurer",
+      "position": "Treasurer",
+      "name": "[Insert Treasurer Name]",
+      "bio": "Overseeing financial operations and ensuring fiscal responsibility.",
+      "image": "/images/leadership/placeholder-treasurer.jpg",
+      "term": "2024-2026"
+    },
+    {
+      "id": "fin-secretary",
+      "position": "Financial Secretary",
+      "name": "[Insert Financial Secretary Name]",
+      "bio": "Managing membership dues and financial records.",
+      "image": "/images/leadership/placeholder-fin-sec.jpg",
+      "term": "2024-2026"
+    },
+    {
+      "id": "pro",
+      "position": "Public Relations Officer",
+      "name": "[Insert PRO Name]",
+      "bio": "Managing public communications and community outreach.",
+      "image": "/images/leadership/placeholder-pro.jpg",
+      "term": "2024-2026"
+    }
+  ],
+  "boardOfTrustees": [
+    {
+      "id": "trustee-1",
+      "name": "[Insert Trustee Name]",
+      "bio": "Providing strategic guidance and oversight.",
+      "image": "/images/trustees/placeholder-1.jpg"
+    },
+    {
+      "id": "trustee-2",
+      "name": "[Insert Trustee Name]",
+      "bio": "Advising on governance and community initiatives.",
+      "image": "/images/trustees/placeholder-2.jpg"
+    },
+    {
+      "id": "trustee-3",
+      "name": "[Insert Trustee Name]",
+      "bio": "Supporting long-term organizational vision.",
+      "image": "/images/trustees/placeholder-3.jpg"
+    }
+  ],
+  "governance": {
+    "generalAssembly": {
+      "description": "The highest decision-making body, comprising all members in good standing.",
+      "meetingFrequency": "Quarterly",
+      "quorum": "Simple majority of members in good standing"
+    },
+    "executiveCommittee": {
+      "description": "Manages day-to-day operations and implements General Assembly decisions.",
+      "meetingFrequency": "Monthly"
+    },
+    "boardOfTrustees": {
+      "description": "Provides advisory and oversight functions to ensure organizational integrity."
+    }
+  },
+  "pastPresidents": [
+    {
+      "name": "[Insert Past President Name]",
+      "term": "Year - Year"
+    }
+  ]
+}

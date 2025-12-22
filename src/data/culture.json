@@ -1,0 +1,71 @@
+{
+  "heritage": {
+    "overview": "Okpella is a vibrant community rich in cultural heritage, traditions, and natural beauty. Our people are known for their unity, resilience, and strong sense of identity.",
+    "language": {
+      "name": "Okpella",
+      "status": "Actively spoken and preserved",
+      "motto": "Ikhugbe arho Jo'Dhalo"
+    },
+    "landmarks": [
+      {
+        "name": "Okpella Rock Formations",
+        "description": "Distinctive natural rock formations that are iconic to Okpella landscape and hold cultural significance.",
+        "significance": "These formations are not only geological wonders but also part of our cultural identity and folklore.",
+        "image": "/images/culture/rock-formations.jpg"
+      }
+    ]
+  },
+  "traditions": [
+    {
+      "id": "traditional-attire",
+      "title": "Traditional Attire",
+      "description": "Okpella traditional clothing is colorful and distinctive, worn during ceremonies, festivals, and special occasions. Our attire reflects our rich cultural heritage and craftsmanship.",
+      "occasions": ["Weddings", "Festivals", "Cultural celebrations", "Important ceremonies"],
+      "image": "/images/culture/attire.jpg"
+    },
+    {
+      "id": "dances",
+      "title": "Traditional Dances",
+      "description": "Our traditional dances are performed during celebrations and tell stories of our history, values, and community spirit. Each dance has specific meaning and is passed down through generations.",
+      "types": ["Ceremonial dances", "Celebration dances", "Storytelling dances"],
+      "image": "/images/culture/dance.jpg"
+    },
+    {
+      "id": "festivals",
+      "title": "Festivals and Celebrations",
+      "description": "Okpella festivals bring the community together in celebration of our heritage, harvests, and important cultural milestones. These events feature music, dance, food, and traditional ceremonies.",
+      "image": "/images/culture/festival.jpg"
+    },
+    {
+      "id": "cuisine",
+      "title": "Traditional Cuisine",
+      "description": "Okpella cuisine is diverse and flavorful, featuring traditional dishes prepared with locally-sourced ingredients and time-honored cooking methods.",
+      "image": "/images/culture/cuisine.jpg"
+    }
+  ],
+  "values": [
+    "Unity and collective progress",
+    "Respect for elders and tradition",
+    "Community support and solidarity",
+    "Education and youth development",
+    "Hospitality and welcoming spirit",
+    "Hard work and entrepreneurship",
+    "Environmental stewardship"
+  ],
+  "heritageSpotlight": [
+    {
+      "id": "spotlight-1",
+      "title": "The Story of Okpella Unity",
+      "excerpt": "How the Okpella community has maintained strong bonds across generations and geographical distances...",
+      "content": "Throughout history, the Okpella people have demonstrated remarkable unity and collective spirit. This tradition continues today through organizations like ODA-USA, where community members come together to support development and preserve our heritage.",
+      "image": "/images/culture/heritage-1.jpg"
+    },
+    {
+      "id": "spotlight-2",
+      "title": "Okpella's Natural Heritage",
+      "excerpt": "Exploring the unique landscape and natural wonders of Okpella...",
+      "content": "The distinctive rock formations and natural beauty of Okpella have shaped our community's identity and continue to inspire pride in our homeland.",
+      "image": "/images/culture/heritage-2.jpg"
+    }
+  ]
+}

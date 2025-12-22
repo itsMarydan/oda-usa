@@ -1,0 +1,52 @@
+{
+  "name": "Okpella Development Association – USA",
+  "shortName": "ODA–USA",
+  "tagline": "Unity for Progress",
+  "okpellaMotto": "Ikhugbe arho Jo'Dhalo",
+  "founded": 1999,
+  "taxStatus": "501(c)(3)",
+  "headquarters": {
+    "city": "Minneapolis",
+    "county": "Hennepin County",
+    "state": "Minnesota",
+    "note": "Principal office address matches current President's address"
+  },
+  "mission": "ODA–USA focuses on projects beneficial to the entire Okpella community by collaborating with public/private partners to provide social and economic amenities and support investments that spur economic development and transform Okpella into a modern, vibrant town.",
+  "objectives": [
+    "Promote unity, peace, and harmony among Okpella indigenes in the USA and Canada",
+    "Support socio-economic development of Okpella and host communities",
+    "Advance education, youth development, and scholarship programs",
+    "Preserve and promote Okpella cultural heritage, traditions, and values",
+    "Engage investors with focus on fairness, environmental sustainability, and social/economic impact",
+    "Foster welfare assistance and community support programs",
+    "Maintain transparency and accountability in all operations"
+  ],
+  "colors": {
+    "primary": "Green",
+    "secondary": "Gold",
+    "palette": {
+      "brown": "#3c2b23",
+      "gold": "#d99b3b",
+      "cream": "#f7f0e4",
+      "green": "#1f6f3e",
+      "sky": "#2f86c9"
+    }
+  },
+  "languages": ["English", "Okpella"],
+  "audience": [
+    "Okpella sons and daughters in USA and Canada",
+    "Community supporters and donors",
+    "Cultural enthusiasts",
+    "Partner organizations"
+  ],
+  "contact": {
+    "email": "[Insert Contact Email]",
+    "phone": "[Insert Contact Phone]",
+    "address": "[Insert Full Address]"
+  },
+  "social": {
+    "facebook": "[Insert Facebook URL]",
+    "instagram": "[Insert Instagram URL]",
+    "twitter": "[Insert Twitter URL]"
+  }
+}

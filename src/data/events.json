@@ -1,0 +1,107 @@
+{
+  "upcoming": [
+    {
+      "id": "general-meeting-q1",
+      "title": "Quarterly General Meeting",
+      "date": "TBD 2024",
+      "time": "TBD",
+      "location": "Virtual / TBD",
+      "description": "Our quarterly General Assembly meeting where all members in good standing can participate in organizational decisions and updates.",
+      "type": "General Meeting",
+      "registrationRequired": true,
+      "memberOnly": true
+    },
+    {
+      "id": "cultural-day-2024",
+      "title": "Annual Okpella Cultural Day 2024",
+      "date": "TBD 2024",
+      "time": "TBD",
+      "location": "TBD",
+      "description": "A celebration of Okpella heritage featuring traditional music, dance, food, and attire. Open to all community members and supporters.",
+      "type": "Cultural Event",
+      "registrationRequired": false,
+      "memberOnly": false,
+      "image": "/images/events/cultural-day.jpg"
+    },
+    {
+      "id": "fundraiser-2024",
+      "title": "Community Development Fundraiser",
+      "date": "TBD 2024",
+      "time": "TBD",
+      "location": "TBD",
+      "description": "Join us for our annual fundraising event supporting the Dialysis Center and Community Library projects.",
+      "type": "Fundraiser",
+      "registrationRequired": true,
+      "memberOnly": false,
+      "image": "/images/events/fundraiser.jpg"
+    }
+  ],
+  "past": [
+    {
+      "id": "past-event-1",
+      "title": "25th Anniversary Celebration",
+      "date": "2024",
+      "location": "Minneapolis, MN",
+      "description": "Celebrated 25 years of community service and development achievements.",
+      "type": "Anniversary",
+      "image": "/images/events/past-anniversary.jpg",
+      "highlights": [
+        "Over 200 attendees",
+        "Honored founding members",
+        "Showcased 25 years of projects"
+      ]
+    },
+    {
+      "id": "past-event-2",
+      "title": "Cultural Showcase 2023",
+      "date": "2023",
+      "location": "TBD",
+      "description": "A vibrant display of Okpella culture with traditional performances and cuisine.",
+      "type": "Cultural Event",
+      "image": "/images/events/past-cultural.jpg",
+      "highlights": [
+        "Traditional dance performances",
+        "Cultural fashion show",
+        "Authentic Okpella cuisine"
+      ]
+    }
+  ],
+  "gallery": {
+    "culturalEvents": [
+      {
+        "id": "gallery-1",
+        "src": "/images/gallery/cultural-1.jpg",
+        "caption": "Traditional dance performance at Cultural Day",
+        "category": "Cultural"
+      },
+      {
+        "id": "gallery-2",
+        "src": "/images/gallery/cultural-2.jpg",
+        "caption": "Community members in traditional attire",
+        "category": "Cultural"
+      }
+    ],
+    "communityProjects": [
+      {
+        "id": "gallery-3",
+        "src": "/images/gallery/project-1.jpg",
+        "caption": "Library opening ceremony",
+        "category": "Projects"
+      },
+      {
+        "id": "gallery-4",
+        "src": "/images/gallery/project-2.jpg",
+        "caption": "Welfare assistance distribution",
+        "category": "Projects"
+      }
+    ],
+    "meetings": [
+      {
+        "id": "gallery-5",
+        "src": "/images/gallery/meeting-1.jpg",
+        "caption": "General Assembly meeting",
+        "category": "Meetings"
+      }
+    ]
+  }
+}

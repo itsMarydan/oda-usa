@@ -1,0 +1,253 @@
+{
+  "hero": {
+    "title": "Okpella Community Library",
+    "tagline": "A cornerstone of education and community development",
+    "description": "Empowering education, knowledge, and opportunity in Okpella through accessible learning resources and community support."
+  },
+  "about": {
+    "title": "About the Library",
+    "content": [
+      "The Okpella Community Library stands as one of ODA-USA's flagship initiatives, embodying our commitment to education and community empowerment. Established to serve students, youth, and the wider Okpella community, the library provides a safe, welcoming space for learning, research, and personal growth.",
+      "In a region where access to educational resources can be limited, the library serves as a beacon of opportunity. It enables students to pursue academic excellence, provides youth with pathways to knowledge, and offers the entire community a place to learn, grow, and connect.",
+      "As a core ODA-USA initiative, the library reflects our belief that education is the foundation of community development. By investing in this vital resource, we invest in the future of Okpella—one student, one book, one opportunity at a time."
+    ],
+    "mission": "To provide free, accessible educational resources and a nurturing learning environment that empowers individuals and strengthens the entire Okpella community."
+  },
+  "location": {
+    "address": "Okugbe, Okpella",
+    "region": "Edo State, Nigeria",
+    "managedBy": "Supported and managed by ODA-USA",
+    "hours": {
+      "weekdays": "TBD",
+      "weekends": "TBD",
+      "note": "Hours subject to operational funding and staffing availability"
+    }
+  },
+  "operations": {
+    "title": "Library Operations",
+    "description": "ODA-USA provides ongoing operational support to ensure the library remains accessible and effective.",
+    "supportedAreas": [
+      {
+        "area": "Library Staff",
+        "description": "Trained librarians and staff to manage operations, assist patrons, and maintain resources"
+      },
+      {
+        "area": "Security Personnel",
+        "description": "Dedicated security to ensure a safe environment for students and community members"
+      },
+      {
+        "area": "Utilities & Maintenance",
+        "description": "Power, water, and regular facility maintenance to keep the library functional"
+      },
+      {
+        "area": "Resources & Materials",
+        "description": "Books, educational materials, and learning resources for all ages"
+      }
+    ],
+    "fundingModel": "Annual operational budgets provided through ODA-USA member dues, donations, and fundraising initiatives"
+  },
+  "whoWeServe": {
+    "title": "Who the Library Serves",
+    "audiences": [
+      {
+        "group": "Students",
+        "description": "Primary and secondary school students seeking study space, textbooks, and academic resources",
+        "icon": "GraduationCap"
+      },
+      {
+        "group": "Youth & Young Adults",
+        "description": "Young people pursuing personal development, vocational skills, and self-directed learning",
+        "icon": "Users"
+      },
+      {
+        "group": "Community Members",
+        "description": "Adults seeking knowledge, information, and lifelong learning opportunities",
+        "icon": "Heart"
+      },
+      {
+        "group": "Researchers & Learners",
+        "description": "Individuals conducting research or pursuing specialized knowledge",
+        "icon": "BookOpen"
+      }
+    ]
+  },
+  "programs": {
+    "title": "Programs & Services",
+    "services": [
+      {
+        "name": "Reading & Study Space",
+        "description": "Quiet, well-lit spaces for individual study and group learning",
+        "icon": "BookOpen"
+      },
+      {
+        "name": "Educational Resources",
+        "description": "Textbooks, reference materials, and supplementary learning resources",
+        "icon": "Book"
+      },
+      {
+        "name": "Youth Learning Support",
+        "description": "Tutoring assistance and academic guidance for young learners",
+        "icon": "Users"
+      },
+      {
+        "name": "Community Programs",
+        "description": "Reading clubs, educational workshops, and community learning events",
+        "icon": "Calendar"
+      },
+      {
+        "name": "Digital Resources",
+        "description": "Future expansion to include computer access and digital learning tools",
+        "icon": "Laptop",
+        "status": "Planned"
+      }
+    ]
+  },
+  "impact": {
+    "title": "Impact & Importance",
+    "statement": "Education is the most powerful tool for long-term community transformation. The Okpella Community Library represents our investment in that future.",
+    "points": [
+      "Access to knowledge breaks cycles of poverty and creates opportunity",
+      "A well-resourced library levels the educational playing field for all students",
+      "Community learning spaces foster collaboration, curiosity, and growth",
+      "Libraries preserve knowledge and make it accessible across generations"
+    ],
+    "metrics": [
+      {
+        "label": "Students Served Monthly",
+        "value": "500+",
+        "description": "Approximate number of students using the library each month"
+      },
+      {
+        "label": "Books & Resources",
+        "value": "1,000+",
+        "description": "Educational materials available to the community"
+      },
+      {
+        "label": "Study Hours Provided",
+        "value": "2,000+",
+        "description": "Monthly hours of safe study space for learners"
+      },
+      {
+        "label": "Community Programs",
+        "value": "12+",
+        "description": "Annual educational events and programs hosted"
+      }
+    ]
+  },
+  "needs": {
+    "title": "Current Needs",
+    "description": "Your support helps us maintain operations and expand the library's impact.",
+    "categories": [
+      {
+        "category": "Books & Learning Materials",
+        "items": [
+          "Textbooks for primary and secondary students",
+          "Reference books and encyclopedias",
+          "Fiction and non-fiction for all ages",
+          "Educational magazines and periodicals"
+        ],
+        "priority": "High"
+      },
+      {
+        "category": "Furniture & Equipment",
+        "items": [
+          "Study tables and chairs",
+          "Bookshelves and storage units",
+          "Reading lamps and lighting",
+          "Ceiling fans and ventilation"
+        ],
+        "priority": "High"
+      },
+      {
+        "category": "Power & Infrastructure",
+        "items": [
+          "Generator fuel and maintenance",
+          "Solar power system (future goal)",
+          "Electrical repairs and upgrades",
+          "Internet connectivity (planned)"
+        ],
+        "priority": "Medium"
+      },
+      {
+        "category": "Staff & Operations",
+        "items": [
+          "Librarian salaries",
+          "Security personnel wages",
+          "Cleaning and maintenance staff",
+          "Training and professional development"
+        ],
+        "priority": "Critical"
+      },
+      {
+        "category": "Security & Maintenance",
+        "items": [
+          "Security system upgrades",
+          "Building repairs and painting",
+          "Pest control and sanitation",
+          "Emergency and safety equipment"
+        ],
+        "priority": "Medium"
+      }
+    ]
+  },
+  "gallery": [
+    {
+      "id": "library-1",
+      "caption": "Library exterior",
+      "category": "Building"
+    },
+    {
+      "id": "library-2",
+      "caption": "Reading room with students",
+      "category": "Interior"
+    },
+    {
+      "id": "library-3",
+      "caption": "Bookshelves and resources",
+      "category": "Resources"
+    },
+    {
+      "id": "library-4",
+      "caption": "Community learning event",
+      "category": "Programs"
+    },
+    {
+      "id": "library-5",
+      "caption": "Study space",
+      "category": "Interior"
+    },
+    {
+      "id": "library-6",
+      "caption": "Students using the library",
+      "category": "Community"
+    }
+  ],
+  "support": {
+    "title": "Support the Library",
+    "message": "Your support helps keep the doors open, the lights on, and knowledge accessible.",
+    "callToAction": "Every donation—big or small—makes a direct impact on students and the community.",
+    "taxDeductible": true,
+    "ways": [
+      {
+        "method": "One-Time Donation",
+        "description": "Make a tax-deductible donation to support library operations",
+        "link": "/donate"
+      },
+      {
+        "method": "Monthly Giving",
+        "description": "Become a recurring supporter with monthly contributions",
+        "link": "/donate"
+      },
+      {
+        "method": "Sponsor a Resource",
+        "description": "Dedicate books, furniture, or equipment in honor of someone special",
+        "link": "/contact"
+      },
+      {
+        "method": "Corporate Partnership",
+        "description": "Partner with ODA-USA to sponsor library programs or infrastructure",
+        "link": "/contact"
+      }
+    ]
+  }
+}

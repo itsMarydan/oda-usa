@@ -1,0 +1,77 @@
+{
+  "eligibility": [
+    "Persons of Okpella origin or descent",
+    "Spouses of Okpella indigenes",
+    "Individuals with strong interest in and commitment to Okpella culture and community development goals"
+  ],
+  "fees": {
+    "application": {
+      "amount": 50,
+      "currency": "USD",
+      "type": "one-time",
+      "refundable": false,
+      "description": "Non-refundable application fee for new members"
+    },
+    "annualDues": {
+      "single": {
+        "amount": 150,
+        "currency": "USD",
+        "description": "Annual membership dues for single members"
+      },
+      "married": {
+        "amount": 300,
+        "currency": "USD",
+        "description": "Annual membership dues for married couples"
+      }
+    }
+  },
+  "benefits": [
+    "Voting rights in General Assembly (when in good standing)",
+    "Participate in organizational decision-making",
+    "Access to member-only events and meetings",
+    "Opportunity to serve on committees and leadership positions",
+    "Network with Okpella community members across USA and Canada",
+    "Direct involvement in community development projects",
+    "Support welfare assistance programs",
+    "Contribute to cultural preservation initiatives"
+  ],
+  "goodStanding": {
+    "requirements": [
+      "Current on annual membership dues",
+      "Regular meeting attendance or participation",
+      "Adherence to organizational bylaws and code of conduct",
+      "Active engagement in community initiatives"
+    ],
+    "privileges": [
+      "Full voting rights",
+      "Eligibility for leadership positions",
+      "Access to welfare assistance programs if needed",
+      "Priority registration for events"
+    ]
+  },
+  "categories": [
+    {
+      "type": "Regular Member",
+      "description": "Okpella indigenes and descendants with full membership privileges",
+      "votingRights": true
+    },
+    {
+      "type": "Associate Member",
+      "description": "Spouses and individuals with strong commitment to Okpella development",
+      "votingRights": true
+    }
+  ],
+  "paymentMethods": {
+    "zelle": "[Insert Zelle Email/Phone]",
+    "bankTransfer": {
+      "bankName": "[Insert Bank Name]",
+      "accountName": "Okpella Development Association - USA",
+      "accountNumber": "[Insert Account Number]",
+      "routingNumber": "[Insert Routing Number]"
+    },
+    "check": {
+      "payableTo": "ODA-USA",
+      "mailTo": "[Insert Mailing Address]"
+    }
+  }
+}

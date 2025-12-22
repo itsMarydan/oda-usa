@@ -1,0 +1,38 @@
+{
+  "active": [
+    {
+      "id": "next-meeting",
+      "text": "Next General Meeting: TBD - Check back for updates",
+      "link": "/events",
+      "type": "meeting",
+      "priority": "high"
+    }
+  ],
+  "homepage": [
+    {
+      "id": "welcome",
+      "title": "Welcome to ODA-USA",
+      "date": "2024-01-15",
+      "excerpt": "Building a stronger Okpella community through unity, development, and cultural preservation.",
+      "content": "ODA-USA continues to lead community development initiatives, support educational programs, and preserve our rich cultural heritage. Join us in making a difference.",
+      "type": "announcement"
+    },
+    {
+      "id": "dialysis-project",
+      "title": "Dialysis Center Project Update",
+      "date": "2024-01-10",
+      "excerpt": "Partnership with ENAW formalized to bring critical healthcare services to Okpella.",
+      "content": "We are pleased to announce progress on the Dialysis Center Project in partnership with Ekhoruioyemen Nation Advancement Worldwide. This facility will provide life-saving care to our community.",
+      "type": "project-update"
+    },
+    {
+      "id": "library-support",
+      "title": "Community Library Needs Your Support",
+      "date": "2024-01-05",
+      "excerpt": "Help us maintain and expand the Okpella Community Library's services.",
+      "content": "The Okpella Community Library serves hundreds of students monthly. Your donations help us provide staffing, security, and educational resources.",
+      "link": "/donate",
+      "type": "call-to-action"
+    }
+  ]
+}
