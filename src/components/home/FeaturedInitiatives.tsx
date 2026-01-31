@@ -46,7 +46,7 @@ const initiatives = [
 
 export default function FeaturedInitiatives() {
   return (
-    <section className="section-padding bg-gradient-to-b from-white to-oda-sky/30">
+    <section className="section-padding bg-white">
       <div className="container-custom">
         <div className="text-center mb-16">
           <span className="inline-block text-oda-blue font-semibold text-sm uppercase tracking-wider mb-3">What We Do</span>

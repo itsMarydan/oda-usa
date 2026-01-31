@@ -4,18 +4,14 @@ import organizationData from '@/data/organization.json';
 
 export default function Hero() {
   return (
-    <section className="relative bg-gradient-to-br from-oda-sky/60 via-white to-oda-cream overflow-hidden">
-      {/* Dot pattern overlay */}
-      <div className="absolute inset-0 opacity-[0.12]">
+    <section className="relative bg-oda-sky overflow-hidden">
+      {/* Subtle dot pattern for texture */}
+      <div className="absolute inset-0 opacity-[0.08]">
         <div className="absolute inset-0" style={{
-          backgroundImage: 'radial-gradient(circle at 2px 2px, #4A90E2 1.5px, transparent 0)',
-          backgroundSize: '32px 32px'
+          backgroundImage: 'radial-gradient(circle at 2px 2px, #4A90E2 1px, transparent 0)',
+          backgroundSize: '24px 24px'
         }} />
       </div>
-      {/* Decorative gradient blobs */}
-      <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-oda-blue/10 rounded-full blur-3xl -translate-x-1/3 -translate-y-1/3" />
-      <div className="absolute bottom-0 right-0 w-[400px] h-[400px] bg-oda-gold/15 rounded-full blur-3xl translate-x-1/4 translate-y-1/4" />
-      <div className="absolute top-1/2 right-0 w-64 h-64 bg-oda-blue/5 rounded-full blur-2xl translate-x-1/2" />
 
       <div className="container-custom section-padding relative">
         <div className="max-w-4xl mx-auto text-center">

@@ -6,7 +6,7 @@ export default function LatestUpdates() {
   const updates = announcementsData.homepage.slice(0, 3);
 
   return (
-    <section className="section-padding bg-oda-sky/40">
+    <section className="section-padding bg-oda-cream">
       <div className="container-custom">
         <div className="text-center mb-16">
           <span className="inline-block text-oda-blue font-semibold text-sm uppercase tracking-wider mb-3">Stay Connected</span>
