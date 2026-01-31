@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Heart, Book, GraduationCap, Activity, Users } from 'lucide-react';
+import { Heart, Book, GraduationCap, Activity, Users, ArrowRight } from 'lucide-react';
 
 const initiatives = [
   {
@@ -63,17 +63,20 @@ export default function FeaturedInitiatives() {
               <Link
                 key={initiative.title}
                 href={initiative.link}
-                className="card p-8 group"
+                className="card p-8 group relative"
               >
                 <div className={`w-14 h-14 ${initiative.bgColor} rounded-xl flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-300`}>
                   <Icon className={`w-7 h-7 ${initiative.color}`} />
                 </div>
-                <h3 className="text-xl font-semibold text-oda-brown mb-3">
+                <h3 className="text-xl font-semibold text-oda-brown mb-3 group-hover:text-oda-blue transition-colors">
                   {initiative.title}
                 </h3>
-                <p className="text-gray-600 leading-relaxed">
+                <p className="text-gray-600 leading-relaxed mb-4">
                   {initiative.description}
                 </p>
+                <span className="inline-flex items-center gap-1 text-oda-blue font-semibold text-sm opacity-0 group-hover:opacity-100 transition-opacity">
+                  Learn more <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                </span>
               </Link>
             );
           })}
