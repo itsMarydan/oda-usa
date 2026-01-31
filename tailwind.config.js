@@ -11,7 +11,7 @@ module.exports = {
         'oda-brown': '#3c2b23',
         'oda-gold': '#d99b3b',
         'oda-cream': '#f7f0e4',
-        'oda-green': '#1f6f3e',
+        'oda-blue': '#1e5a8a',
         'oda-sky': '#2f86c9',
       },
     },

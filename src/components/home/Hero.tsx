@@ -7,14 +7,14 @@ export default function Hero() {
     <section className="relative bg-gradient-to-br from-oda-cream via-white to-oda-cream overflow-hidden">
       <div className="absolute inset-0 opacity-5">
         <div className="absolute inset-0" style={{
-          backgroundImage: 'radial-gradient(circle at 2px 2px, #1f6f3e 1px, transparent 0)',
+          backgroundImage: 'radial-gradient(circle at 2px 2px, #1e5a8a 1px, transparent 0)',
           backgroundSize: '32px 32px'
         }} />
       </div>
 
       <div className="container-custom section-padding relative">
         <div className="max-w-4xl mx-auto text-center">
-          <div className="inline-block mb-6 px-4 py-2 bg-oda-green/10 rounded-full text-oda-green font-semibold text-sm">
+          <div className="inline-block mb-6 px-4 py-2 bg-oda-blue/10 rounded-full text-oda-blue font-semibold text-sm">
             Founded {organizationData.founded} • {organizationData.taxStatus} Nonprofit
           </div>
 
@@ -48,15 +48,15 @@ export default function Hero() {
 
           <div className="mt-12 flex flex-wrap justify-center gap-6 text-sm text-gray-600">
             <div className="flex items-center space-x-2">
-              <div className="w-2 h-2 bg-oda-green rounded-full"></div>
+              <div className="w-2 h-2 bg-oda-blue rounded-full"></div>
               <span>Tax-Deductible Donations</span>
             </div>
             <div className="flex items-center space-x-2">
-              <div className="w-2 h-2 bg-oda-green rounded-full"></div>
+              <div className="w-2 h-2 bg-oda-blue rounded-full"></div>
               <span>USA & Canada Members</span>
             </div>
             <div className="flex items-center space-x-2">
-              <div className="w-2 h-2 bg-oda-green rounded-full"></div>
+              <div className="w-2 h-2 bg-oda-blue rounded-full"></div>
               <span>Community First</span>
             </div>
           </div>

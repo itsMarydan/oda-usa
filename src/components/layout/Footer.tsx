@@ -12,7 +12,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
             <div className="flex items-center space-x-3 mb-4">
-              <div className="w-12 h-12 bg-oda-green rounded-full flex items-center justify-center text-white font-bold text-xl">
+              <div className="w-12 h-12 bg-oda-blue rounded-full flex items-center justify-center text-white font-bold text-xl">
                 ODA
               </div>
               <div>
@@ -96,7 +96,7 @@ export default function Footer() {
                 href={organizationData.social.facebook}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-8 h-8 bg-white/10 hover:bg-oda-green rounded-full flex items-center justify-center transition-colors"
+                className="w-8 h-8 bg-white/10 hover:bg-oda-blue rounded-full flex items-center justify-center transition-colors"
                 aria-label="Facebook"
               >
                 <Facebook className="w-4 h-4" />
@@ -105,7 +105,7 @@ export default function Footer() {
                 href={organizationData.social.instagram}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-8 h-8 bg-white/10 hover:bg-oda-green rounded-full flex items-center justify-center transition-colors"
+                className="w-8 h-8 bg-white/10 hover:bg-oda-blue rounded-full flex items-center justify-center transition-colors"
                 aria-label="Instagram"
               >
                 <Instagram className="w-4 h-4" />
@@ -114,7 +114,7 @@ export default function Footer() {
                 href={organizationData.social.twitter}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-8 h-8 bg-white/10 hover:bg-oda-green rounded-full flex items-center justify-center transition-colors"
+                className="w-8 h-8 bg-white/10 hover:bg-oda-blue rounded-full flex items-center justify-center transition-colors"
                 aria-label="Twitter"
               >
                 <Twitter className="w-4 h-4" />

@@ -13,7 +13,7 @@ export default function AnnouncementBar() {
   if (!isVisible || !activeAnnouncement) return null;
 
   return (
-    <div className="bg-oda-green text-white py-2 px-4 relative">
+    <div className="bg-oda-blue text-white py-2 px-4 relative">
       <div className="container-custom flex items-center justify-center">
         <p className="text-sm text-center">
           {activeAnnouncement.link ? (

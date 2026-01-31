@@ -35,7 +35,7 @@ export default function LatestUpdates() {
               {update.link && (
                 <Link
                   href={update.link}
-                  className="text-oda-green hover:text-oda-green/80 font-medium inline-flex items-center space-x-1"
+                  className="text-oda-blue hover:text-oda-blue/80 font-medium inline-flex items-center space-x-1"
                 >
                   <span>Learn More</span>
                   <ArrowRight className="w-4 h-4" />

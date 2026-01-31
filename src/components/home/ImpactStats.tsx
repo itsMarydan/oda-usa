@@ -5,7 +5,7 @@ const stats = [
     icon: Users,
     value: '500+',
     label: 'Community Members Served',
-    color: 'text-oda-green',
+    color: 'text-oda-blue',
   },
   {
     icon: DollarSign,

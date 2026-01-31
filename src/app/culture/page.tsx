@@ -32,7 +32,7 @@ export default function CulturePage() {
                 <div className="space-y-4">
                   <div>
                     <div className="text-sm text-gray-600 mb-1">Language</div>
-                    <div className="text-xl font-semibold text-oda-green">
+                    <div className="text-xl font-semibold text-oda-blue">
                       {cultureData.heritage.language.name}
                     </div>
                     <div className="text-sm text-gray-500 mt-1">
@@ -51,12 +51,12 @@ export default function CulturePage() {
                 </div>
               </div>
 
-              <div className="bg-oda-green/5 p-8 rounded-xl border-2 border-oda-green">
+              <div className="bg-oda-blue/5 p-8 rounded-xl border-2 border-oda-blue">
                 <h3 className="text-2xl font-semibold text-oda-brown mb-4">Core Values</h3>
                 <ul className="space-y-3">
                   {cultureData.values.map((value, index) => (
                     <li key={index} className="flex items-start space-x-2">
-                      <Heart className="w-5 h-5 text-oda-green flex-shrink-0 mt-0.5" />
+                      <Heart className="w-5 h-5 text-oda-blue flex-shrink-0 mt-0.5" />
                       <span className="text-gray-700">{value}</span>
                     </li>
                   ))}
@@ -102,11 +102,11 @@ export default function CulturePage() {
             {cultureData.traditions.map((tradition, index) => (
               <div key={tradition.id} className="card p-8">
                 <div className="flex items-start space-x-4 mb-4">
-                  <div className="w-16 h-16 bg-oda-green/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                    {index === 0 && <Users className="w-8 h-8 text-oda-green" />}
-                    {index === 1 && <Music className="w-8 h-8 text-oda-green" />}
-                    {index === 2 && <Sparkles className="w-8 h-8 text-oda-green" />}
-                    {index === 3 && <Heart className="w-8 h-8 text-oda-green" />}
+                  <div className="w-16 h-16 bg-oda-blue/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                    {index === 0 && <Users className="w-8 h-8 text-oda-blue" />}
+                    {index === 1 && <Music className="w-8 h-8 text-oda-blue" />}
+                    {index === 2 && <Sparkles className="w-8 h-8 text-oda-blue" />}
+                    {index === 3 && <Heart className="w-8 h-8 text-oda-blue" />}
                   </div>
                   <div className="flex-1">
                     <h3 className="text-2xl font-semibold text-oda-brown mb-3">

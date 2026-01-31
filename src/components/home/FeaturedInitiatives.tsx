@@ -39,7 +39,7 @@ const initiatives = [
     title: 'Culture & Heritage',
     description: 'Preserving and celebrating Okpella traditions, language, and customs.',
     link: '/culture',
-    color: 'text-oda-green',
+    color: 'text-oda-blue',
     bgColor: 'bg-green-50',
   },
 ];
