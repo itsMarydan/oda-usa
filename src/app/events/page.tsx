@@ -4,7 +4,7 @@ import eventsData from '@/data/events.json';
 export default function EventsPage() {
   return (
     <div className="min-h-screen">
-      <section className="bg-gradient-to-br from-oda-sky to-oda-blue text-white section-padding">
+      <section className="bg-gradient-to-br from-oda-blue to-oda-brown text-white section-padding">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="mb-6 text-white">Events & Gallery</h1>

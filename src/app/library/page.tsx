@@ -15,7 +15,7 @@ const iconMap: Record<string, any> = {
 export default function LibraryPage() {
   return (
     <div className="min-h-screen">
-      <section className="relative bg-gradient-to-br from-oda-blue via-oda-blue to-oda-sky text-white section-padding overflow-hidden">
+      <section className="relative bg-gradient-to-br from-oda-blue to-oda-brown text-white section-padding overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute inset-0" style={{
             backgroundImage: 'radial-gradient(circle at 2px 2px, white 1px, transparent 0)',

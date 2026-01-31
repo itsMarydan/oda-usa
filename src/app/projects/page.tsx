@@ -5,7 +5,7 @@ import projectsData from '@/data/projects.json';
 export default function ProjectsPage() {
   return (
     <div className="min-h-screen">
-      <section className="bg-gradient-to-br from-oda-blue to-oda-sky text-white section-padding">
+      <section className="bg-gradient-to-br from-oda-blue to-oda-brown text-white section-padding">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="mb-6 text-white">Our Projects & Initiatives</h1>
