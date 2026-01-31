@@ -56,7 +56,11 @@ export default function LibraryFeature() {
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
                 href="/library"
-                className="inline-flex items-center justify-center space-x-2 bg-white text-oda-blue px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-all shadow-lg"
+                className="inline-flex items-center justify-center space-x-2 bg-white text-oda-blue px-8 py-4 rounded-[10px] font-semibold
+                           shadow-[0_4px_14px_rgba(255,255,255,0.3)]
+                           hover:shadow-[0_6px_20px_rgba(255,255,255,0.4)]
+                           hover:-translate-y-1 hover:bg-gray-50
+                           transition-all duration-300"
               >
                 <BookOpen className="w-5 h-5" />
                 <span>Visit the Library Page</span>
@@ -65,7 +69,11 @@ export default function LibraryFeature() {
 
               <Link
                 href="/donate"
-                className="inline-flex items-center justify-center space-x-2 bg-oda-gold text-white px-8 py-4 rounded-lg font-semibold hover:bg-oda-gold/90 transition-all shadow-lg"
+                className="inline-flex items-center justify-center space-x-2 bg-oda-gold text-white px-8 py-4 rounded-[10px] font-semibold
+                           shadow-[0_4px_14px_rgba(245,176,65,0.4)]
+                           hover:shadow-[0_6px_20px_rgba(245,176,65,0.5)]
+                           hover:-translate-y-1 hover:bg-[#E5A031]
+                           transition-all duration-300"
               >
                 <Heart className="w-5 h-5" />
                 <span>Support the Library</span>

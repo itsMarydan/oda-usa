@@ -6,18 +6,19 @@ export default function LatestUpdates() {
   const updates = announcementsData.homepage.slice(0, 3);
 
   return (
-    <section className="section-padding bg-gray-50">
+    <section className="section-padding bg-oda-sky/40">
       <div className="container-custom">
-        <div className="text-center mb-12">
+        <div className="text-center mb-16">
+          <span className="inline-block text-oda-blue font-semibold text-sm uppercase tracking-wider mb-3">Stay Connected</span>
           <h2 className="text-oda-brown mb-4">Latest Updates</h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             Stay informed about our initiatives and community news
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-10">
           {updates.map((update) => (
-            <div key={update.id} className="card p-6">
+            <div key={update.id} className="card p-8">
               <div className="flex items-center space-x-2 text-sm text-gray-500 mb-3">
                 <Calendar className="w-4 h-4" />
                 <span>{new Date(update.date).toLocaleDateString('en-US', {
@@ -35,10 +36,10 @@ export default function LatestUpdates() {
               {update.link && (
                 <Link
                   href={update.link}
-                  className="text-oda-blue hover:text-oda-blue/80 font-medium inline-flex items-center space-x-1"
+                  className="text-oda-blue hover:text-oda-navy font-semibold inline-flex items-center space-x-1 group transition-colors"
                 >
                   <span>Learn More</span>
-                  <ArrowRight className="w-4 h-4" />
+                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </Link>
               )}
             </div>
