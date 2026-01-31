@@ -22,14 +22,15 @@
     "Maintain transparency and accountability in all operations"
   ],
   "colors": {
-    "primary": "Green",
+    "primary": "Sky Blue",
     "secondary": "Gold",
     "palette": {
-      "brown": "#3c2b23",
-      "gold": "#d99b3b",
-      "cream": "#f7f0e4",
-      "green": "#1e5a8a",
-      "sky": "#2f86c9"
+      "brown": "#2C3E50",
+      "gold": "#F5B041",
+      "cream": "#F9F6F3",
+      "blue": "#4A90E2",
+      "sky": "#E8F4F8",
+      "navy": "#003D82"
     }
   },
   "languages": ["English", "Okpella"],

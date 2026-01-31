@@ -4,13 +4,15 @@ import organizationData from '@/data/organization.json';
 
 export default function Hero() {
   return (
-    <section className="relative bg-gradient-to-br from-oda-cream via-white to-oda-cream overflow-hidden">
-      <div className="absolute inset-0 opacity-5">
+    <section className="relative bg-gradient-to-br from-oda-sky via-white to-oda-cream overflow-hidden">
+      <div className="absolute inset-0 opacity-[0.07]">
         <div className="absolute inset-0" style={{
-          backgroundImage: 'radial-gradient(circle at 2px 2px, #1e5a8a 1px, transparent 0)',
-          backgroundSize: '32px 32px'
+          backgroundImage: 'radial-gradient(circle at 2px 2px, #4A90E2 1px, transparent 0)',
+          backgroundSize: '40px 40px'
         }} />
       </div>
+      <div className="absolute top-0 left-0 w-96 h-96 bg-oda-blue/5 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2" />
+      <div className="absolute bottom-0 right-0 w-96 h-96 bg-oda-gold/10 rounded-full blur-3xl translate-x-1/2 translate-y-1/2" />
 
       <div className="container-custom section-padding relative">
         <div className="max-w-4xl mx-auto text-center">

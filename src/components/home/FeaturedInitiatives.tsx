@@ -40,37 +40,38 @@ const initiatives = [
     description: 'Preserving and celebrating Okpella traditions, language, and customs.',
     link: '/culture',
     color: 'text-oda-blue',
-    bgColor: 'bg-green-50',
+    bgColor: 'bg-oda-sky',
   },
 ];
 
 export default function FeaturedInitiatives() {
   return (
-    <section className="section-padding bg-white">
+    <section className="section-padding bg-gradient-to-b from-white to-oda-sky/30">
       <div className="container-custom">
-        <div className="text-center mb-12">
+        <div className="text-center mb-16">
+          <span className="inline-block text-oda-blue font-semibold text-sm uppercase tracking-wider mb-3">What We Do</span>
           <h2 className="text-oda-brown mb-4">Our Initiatives</h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             Supporting community development through strategic projects and programs
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {initiatives.map((initiative) => {
             const Icon = initiative.icon;
             return (
               <Link
                 key={initiative.title}
                 href={initiative.link}
-                className="card p-6 hover:scale-105 transition-transform duration-300"
+                className="card p-8 group"
               >
-                <div className={`w-12 h-12 ${initiative.bgColor} rounded-lg flex items-center justify-center mb-4`}>
-                  <Icon className={`w-6 h-6 ${initiative.color}`} />
+                <div className={`w-14 h-14 ${initiative.bgColor} rounded-xl flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-300`}>
+                  <Icon className={`w-7 h-7 ${initiative.color}`} />
                 </div>
-                <h3 className="text-xl font-semibold text-oda-brown mb-2">
+                <h3 className="text-xl font-semibold text-oda-brown mb-3">
                   {initiative.title}
                 </h3>
-                <p className="text-gray-600">
+                <p className="text-gray-600 leading-relaxed">
                   {initiative.description}
                 </p>
               </Link>

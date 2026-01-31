@@ -60,9 +60,9 @@ export default function Header() {
                     : 'font-medium'
                 } ${
                   isActivePath(item.href)
-                    ? 'text-oda-blue bg-oda-cream'
+                    ? 'text-oda-blue bg-oda-sky'
                     : item.featured
-                    ? 'text-oda-blue hover:text-oda-blue hover:bg-oda-cream'
+                    ? 'text-oda-blue hover:text-oda-blue hover:bg-oda-sky'
                     : 'text-gray-700 hover:text-oda-blue hover:bg-gray-50'
                 }`}
               >
@@ -107,9 +107,9 @@ export default function Header() {
                       : 'font-medium'
                   } ${
                     isActivePath(item.href)
-                      ? 'text-oda-blue bg-oda-cream'
+                      ? 'text-oda-blue bg-oda-sky'
                       : item.featured
-                      ? 'text-oda-blue hover:text-oda-blue hover:bg-oda-cream'
+                      ? 'text-oda-blue hover:text-oda-blue hover:bg-oda-sky'
                       : 'text-gray-700 hover:text-oda-blue hover:bg-gray-50'
                   }`}
                 >
