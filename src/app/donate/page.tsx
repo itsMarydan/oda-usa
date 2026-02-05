@@ -18,7 +18,7 @@ export default function DonatePage() {
 
   return (
     <div className="min-h-screen">
-      <section className="bg-gradient-to-br from-oda-green to-oda-brown text-white section-padding">
+      <section className="bg-gradient-to-br from-oda-blue to-oda-brown text-white section-padding">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto text-center">
             <div className="inline-block mb-4 px-4 py-2 bg-white/20 rounded-full text-white font-semibold text-sm">
@@ -46,7 +46,7 @@ export default function DonatePage() {
               onClick={() => setSelectedProject('general')}
               className={`card p-6 text-left transition-all ${
                 selectedProject === 'general'
-                  ? 'ring-4 ring-oda-green shadow-lg'
+                  ? 'ring-4 ring-oda-blue shadow-lg'
                   : 'hover:shadow-lg'
               }`}
             >
@@ -67,12 +67,12 @@ export default function DonatePage() {
                   onClick={() => setSelectedProject(project.id)}
                   className={`card p-6 text-left transition-all ${
                     selectedProject === project.id
-                      ? 'ring-4 ring-oda-green shadow-lg'
+                      ? 'ring-4 ring-oda-blue shadow-lg'
                       : 'hover:shadow-lg'
                   }`}
                 >
-                  <div className="w-12 h-12 bg-oda-green/10 rounded-lg flex items-center justify-center mb-4">
-                    <Icon className="w-6 h-6 text-oda-green" />
+                  <div className="w-12 h-12 bg-oda-blue/10 rounded-lg flex items-center justify-center mb-4">
+                    <Icon className="w-6 h-6 text-oda-blue" />
                   </div>
                   <h3 className="text-xl font-semibold text-oda-brown mb-2">
                     {project.title}
@@ -104,7 +104,7 @@ export default function DonatePage() {
                     type="checkbox"
                     checked={wantsReceipt}
                     onChange={(e) => setWantsReceipt(e.target.checked)}
-                    className="w-5 h-5 text-oda-green rounded focus:ring-oda-green"
+                    className="w-5 h-5 text-oda-blue rounded focus:ring-oda-blue"
                   />
                   <span className="text-gray-700 font-medium">
                     I would like a tax receipt for my donation
@@ -116,7 +116,7 @@ export default function DonatePage() {
               </div>
 
               <div className="space-y-6">
-                <div className="border-2 border-gray-200 rounded-lg p-6 hover:border-oda-green transition-colors">
+                <div className="border-2 border-gray-200 rounded-lg p-6 hover:border-oda-blue transition-colors">
                   <div className="flex items-start space-x-4">
                     <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center flex-shrink-0">
                       <Smartphone className="w-6 h-6 text-purple-600" />
@@ -128,7 +128,7 @@ export default function DonatePage() {
                       </p>
                       <div className="bg-gray-50 p-3 rounded-md">
                         <div className="text-sm text-gray-600 mb-1">Send to:</div>
-                        <div className="font-mono text-oda-green font-semibold">
+                        <div className="font-mono text-oda-blue font-semibold">
                           [Insert Zelle Email]
                         </div>
                       </div>
@@ -136,7 +136,7 @@ export default function DonatePage() {
                   </div>
                 </div>
 
-                <div className="border-2 border-gray-200 rounded-lg p-6 hover:border-oda-green transition-colors">
+                <div className="border-2 border-gray-200 rounded-lg p-6 hover:border-oda-blue transition-colors">
                   <div className="flex items-start space-x-4">
                     <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
                       <CreditCard className="w-6 h-6 text-blue-600" />
@@ -168,7 +168,7 @@ export default function DonatePage() {
                   </div>
                 </div>
 
-                <div className="border-2 border-gray-200 rounded-lg p-6 hover:border-oda-green transition-colors">
+                <div className="border-2 border-gray-200 rounded-lg p-6 hover:border-oda-blue transition-colors">
                   <div className="flex items-start space-x-4">
                     <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0">
                       <CreditCard className="w-6 h-6 text-green-600" />

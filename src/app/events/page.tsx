@@ -4,7 +4,7 @@ import eventsData from '@/data/events.json';
 export default function EventsPage() {
   return (
     <div className="min-h-screen">
-      <section className="bg-gradient-to-br from-oda-sky to-oda-green text-white section-padding">
+      <section className="bg-gradient-to-br from-oda-blue to-oda-brown text-white section-padding">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="mb-6 text-white">Events & Gallery</h1>
@@ -27,7 +27,7 @@ export default function EventsPage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
             {eventsData.upcoming.map((event) => (
               <div key={event.id} className="card p-6 hover:scale-105 transition-transform">
-                <div className="inline-block mb-3 px-3 py-1 bg-oda-green/10 text-oda-green text-sm font-semibold rounded-full">
+                <div className="inline-block mb-3 px-3 py-1 bg-oda-blue/10 text-oda-blue text-sm font-semibold rounded-full">
                   {event.type}
                 </div>
                 <h3 className="text-xl font-semibold text-oda-brown mb-3">
@@ -59,7 +59,7 @@ export default function EventsPage() {
                     </span>
                   )}
                   {event.registrationRequired && (
-                    <button className="text-oda-green hover:text-oda-green/80 font-medium text-sm inline-flex items-center space-x-1">
+                    <button className="text-oda-blue hover:text-oda-blue/80 font-medium text-sm inline-flex items-center space-x-1">
                       <span>Register</span>
                       <ChevronRight className="w-4 h-4" />
                     </button>
@@ -202,14 +202,14 @@ export default function EventsPage() {
         </div>
       </section>
 
-      <section className="section-padding bg-oda-green text-white">
+      <section className="section-padding bg-oda-blue text-white">
         <div className="container-custom text-center">
           <h2 className="text-white mb-4">Stay Connected</h2>
           <p className="text-lg text-white/90 max-w-2xl mx-auto mb-8">
             Don&apos;t miss our upcoming events. Join our mailing list or follow us on social media
             for the latest updates and announcements.
           </p>
-          <a href="/contact" className="btn-primary bg-white text-oda-green hover:bg-gray-100">
+          <a href="/contact" className="btn-primary bg-white text-oda-blue hover:bg-gray-100">
             Contact Us
           </a>
         </div>

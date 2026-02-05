@@ -36,7 +36,7 @@ export default function Header() {
       <div className="container-custom">
         <div className="flex items-center justify-between py-4">
           <Link href="/" className="flex items-center space-x-3">
-            <div className="w-12 h-12 bg-oda-green rounded-full flex items-center justify-center text-white font-bold text-xl">
+            <div className="w-12 h-12 bg-oda-blue rounded-full flex items-center justify-center text-white font-bold text-xl">
               ODA
             </div>
             <div className="hidden md:block">
@@ -60,10 +60,10 @@ export default function Header() {
                     : 'font-medium'
                 } ${
                   isActivePath(item.href)
-                    ? 'text-oda-green bg-oda-cream'
+                    ? 'text-oda-blue bg-oda-sky'
                     : item.featured
-                    ? 'text-oda-green hover:text-oda-green hover:bg-oda-cream'
-                    : 'text-gray-700 hover:text-oda-green hover:bg-gray-50'
+                    ? 'text-oda-blue hover:text-oda-blue hover:bg-oda-sky'
+                    : 'text-gray-700 hover:text-oda-blue hover:bg-gray-50'
                 }`}
               >
                 {item.label}
@@ -107,10 +107,10 @@ export default function Header() {
                       : 'font-medium'
                   } ${
                     isActivePath(item.href)
-                      ? 'text-oda-green bg-oda-cream'
+                      ? 'text-oda-blue bg-oda-sky'
                       : item.featured
-                      ? 'text-oda-green hover:text-oda-green hover:bg-oda-cream'
-                      : 'text-gray-700 hover:text-oda-green hover:bg-gray-50'
+                      ? 'text-oda-blue hover:text-oda-blue hover:bg-oda-sky'
+                      : 'text-gray-700 hover:text-oda-blue hover:bg-gray-50'
                   }`}
                 >
                   {item.label}

@@ -15,7 +15,7 @@ const iconMap: Record<string, any> = {
 export default function LibraryPage() {
   return (
     <div className="min-h-screen">
-      <section className="relative bg-gradient-to-br from-oda-green via-oda-green to-oda-sky text-white section-padding overflow-hidden">
+      <section className="relative bg-gradient-to-br from-oda-blue to-oda-brown text-white section-padding overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute inset-0" style={{
             backgroundImage: 'radial-gradient(circle at 2px 2px, white 1px, transparent 0)',
@@ -39,14 +39,14 @@ export default function LibraryPage() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 href="/donate"
-                className="btn-primary bg-white text-oda-green hover:bg-gray-100 inline-flex items-center space-x-2"
+                className="btn-primary bg-white text-oda-blue hover:bg-gray-100 inline-flex items-center space-x-2"
               >
                 <Heart className="w-5 h-5" />
                 <span>Donate to the Library</span>
               </Link>
               <Link
                 href="/contact"
-                className="btn-outline border-white text-white hover:bg-white hover:text-oda-green inline-flex items-center space-x-2"
+                className="btn-outline border-white text-white hover:bg-white hover:text-oda-blue inline-flex items-center space-x-2"
               >
                 <Users className="w-5 h-5" />
                 <span>Get Involved</span>
@@ -65,7 +65,7 @@ export default function LibraryPage() {
                 {paragraph}
               </p>
             ))}
-            <div className="bg-oda-green/10 border-l-4 border-oda-green p-6 rounded-r-lg mt-8">
+            <div className="bg-oda-blue/10 border-l-4 border-oda-blue p-6 rounded-r-lg mt-8">
               <h3 className="text-xl font-semibold text-oda-brown mb-3">Our Mission</h3>
               <p className="text-gray-700 text-lg">
                 {libraryData.about.mission}
@@ -80,8 +80,8 @@ export default function LibraryPage() {
           <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
             <div className="bg-white p-8 rounded-xl shadow-md">
               <div className="flex items-center space-x-3 mb-6">
-                <div className="w-12 h-12 bg-oda-green/10 rounded-lg flex items-center justify-center">
-                  <MapPin className="w-6 h-6 text-oda-green" />
+                <div className="w-12 h-12 bg-oda-blue/10 rounded-lg flex items-center justify-center">
+                  <MapPin className="w-6 h-6 text-oda-blue" />
                 </div>
                 <h2 className="text-2xl font-semibold text-oda-brown">Location & Hours</h2>
               </div>
@@ -121,7 +121,7 @@ export default function LibraryPage() {
               <div className="space-y-4">
                 {libraryData.operations.supportedAreas.map((area, index) => (
                   <div key={index} className="flex items-start space-x-3">
-                    <CheckCircle className="w-5 h-5 text-oda-green flex-shrink-0 mt-0.5" />
+                    <CheckCircle className="w-5 h-5 text-oda-blue flex-shrink-0 mt-0.5" />
                     <div>
                       <div className="font-semibold text-gray-900">{area.area}</div>
                       <div className="text-sm text-gray-600">{area.description}</div>
@@ -152,8 +152,8 @@ export default function LibraryPage() {
               const Icon = iconMap[audience.icon] || Users;
               return (
                 <div key={index} className="card p-6 text-center hover:scale-105 transition-transform">
-                  <div className="w-16 h-16 bg-oda-green/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <Icon className="w-8 h-8 text-oda-green" />
+                  <div className="w-16 h-16 bg-oda-blue/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <Icon className="w-8 h-8 text-oda-blue" />
                   </div>
                   <h3 className="text-lg font-semibold text-oda-brown mb-2">
                     {audience.group}
@@ -183,8 +183,8 @@ export default function LibraryPage() {
               return (
                 <div key={index} className="bg-white p-6 rounded-xl shadow-md">
                   <div className="flex items-start space-x-4 mb-4">
-                    <div className="w-12 h-12 bg-oda-green/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <Icon className="w-6 h-6 text-oda-green" />
+                    <div className="w-12 h-12 bg-oda-blue/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <Icon className="w-6 h-6 text-oda-blue" />
                     </div>
                     <div className="flex-1">
                       <h3 className="text-lg font-semibold text-oda-brown mb-1">
@@ -207,7 +207,7 @@ export default function LibraryPage() {
         </div>
       </section>
 
-      <section className="section-padding bg-oda-green text-white">
+      <section className="section-padding bg-oda-blue text-white">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
@@ -257,7 +257,7 @@ export default function LibraryPage() {
 
             <div className="space-y-6">
               {libraryData.needs.categories.map((category, index) => (
-                <div key={index} className="border-2 border-gray-200 rounded-xl p-6 hover:border-oda-green transition-colors">
+                <div key={index} className="border-2 border-gray-200 rounded-xl p-6 hover:border-oda-blue transition-colors">
                   <div className="flex items-start justify-between mb-4">
                     <h3 className="text-xl font-semibold text-oda-brown">
                       {category.category}
@@ -313,7 +313,7 @@ export default function LibraryPage() {
         </div>
       </section>
 
-      <section className="section-padding bg-gradient-to-br from-oda-brown to-oda-green text-white">
+      <section className="section-padding bg-gradient-to-br from-oda-brown to-oda-blue text-white">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-white mb-6">{libraryData.support.title}</h2>

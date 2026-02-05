@@ -1,3 +1,9 @@
 {
-  "/page": "app/page.js"
+  "/page": "app/page.js",
+  "/projects/page": "app/projects/page.js",
+  "/donate/page": "app/donate/page.js",
+  "/membership/page": "app/membership/page.js",
+  "/culture/page": "app/culture/page.js",
+  "/events/page": "app/events/page.js",
+  "/contact/page": "app/contact/page.js"
 }

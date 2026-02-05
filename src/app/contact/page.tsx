@@ -28,7 +28,7 @@ export default function ContactPage() {
 
   return (
     <div className="min-h-screen">
-      <section className="bg-gradient-to-br from-oda-brown to-oda-green text-white section-padding">
+      <section className="bg-gradient-to-br from-oda-brown to-oda-blue text-white section-padding">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="mb-6 text-white">Contact Us</h1>
@@ -52,8 +52,8 @@ export default function ContactPage() {
 
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-oda-green/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <MapPin className="w-6 h-6 text-oda-green" />
+                  <div className="w-12 h-12 bg-oda-blue/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <MapPin className="w-6 h-6 text-oda-blue" />
                   </div>
                   <div>
                     <h3 className="font-semibold text-oda-brown mb-1">Headquarters</h3>
@@ -76,7 +76,7 @@ export default function ContactPage() {
                     <h3 className="font-semibold text-oda-brown mb-1">Email</h3>
                     <a
                       href={`mailto:${organizationData.contact.email}`}
-                      className="text-gray-600 hover:text-oda-green transition-colors"
+                      className="text-gray-600 hover:text-oda-blue transition-colors"
                     >
                       {organizationData.contact.email}
                     </a>
@@ -91,7 +91,7 @@ export default function ContactPage() {
                     <h3 className="font-semibold text-oda-brown mb-1">Phone</h3>
                     <a
                       href={`tel:${organizationData.contact.phone}`}
-                      className="text-gray-600 hover:text-oda-green transition-colors"
+                      className="text-gray-600 hover:text-oda-blue transition-colors"
                     >
                       {organizationData.contact.phone}
                     </a>
@@ -124,7 +124,7 @@ export default function ContactPage() {
                     value={formData.name}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-oda-green focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-oda-blue focus:border-transparent"
                     placeholder="Your name"
                   />
                 </div>
@@ -140,7 +140,7 @@ export default function ContactPage() {
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-oda-green focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-oda-blue focus:border-transparent"
                     placeholder="your.email@example.com"
                   />
                 </div>
@@ -155,7 +155,7 @@ export default function ContactPage() {
                     name="phone"
                     value={formData.phone}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-oda-green focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-oda-blue focus:border-transparent"
                     placeholder="(555) 123-4567"
                   />
                 </div>
@@ -170,7 +170,7 @@ export default function ContactPage() {
                     value={formData.subject}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-oda-green focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-oda-blue focus:border-transparent"
                   >
                     <option value="">Select a subject</option>
                     <option value="membership">Membership Inquiry</option>
@@ -194,7 +194,7 @@ export default function ContactPage() {
                     onChange={handleChange}
                     required
                     rows={6}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-oda-green focus:border-transparent resize-none"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-oda-blue focus:border-transparent resize-none"
                     placeholder="How can we help you?"
                   />
                 </div>

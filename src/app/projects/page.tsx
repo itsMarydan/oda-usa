@@ -5,7 +5,7 @@ import projectsData from '@/data/projects.json';
 export default function ProjectsPage() {
   return (
     <div className="min-h-screen">
-      <section className="bg-gradient-to-br from-oda-green to-oda-sky text-white section-padding">
+      <section className="bg-gradient-to-br from-oda-blue to-oda-brown text-white section-padding">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="mb-6 text-white">Our Projects & Initiatives</h1>
@@ -27,7 +27,7 @@ export default function ProjectsPage() {
               >
                 <div className={`grid lg:grid-cols-2 gap-12 items-start`}>
                   <div className={index % 2 === 1 ? 'lg:order-2' : ''}>
-                    <div className="inline-block mb-3 px-3 py-1 bg-oda-green/10 text-oda-green text-sm font-semibold rounded-full">
+                    <div className="inline-block mb-3 px-3 py-1 bg-oda-blue/10 text-oda-blue text-sm font-semibold rounded-full">
                       {project.category}
                     </div>
                     <h2 className="text-oda-brown mb-4">{project.title}</h2>
@@ -59,7 +59,7 @@ export default function ProjectsPage() {
                         <ul className="space-y-1">
                           {project.partnerships.map((partner, idx) => (
                             <li key={idx} className="flex items-center space-x-2 text-gray-700">
-                              <CheckCircle className="w-4 h-4 text-oda-green flex-shrink-0" />
+                              <CheckCircle className="w-4 h-4 text-oda-blue flex-shrink-0" />
                               <span>{partner}</span>
                             </li>
                           ))}
@@ -87,7 +87,7 @@ export default function ProjectsPage() {
                         <ul className="space-y-2">
                           {project.activities.map((activity, idx) => (
                             <li key={idx} className="flex items-center space-x-2 text-gray-700">
-                              <CheckCircle className="w-4 h-4 text-oda-green flex-shrink-0" />
+                              <CheckCircle className="w-4 h-4 text-oda-blue flex-shrink-0" />
                               <span>{activity}</span>
                             </li>
                           ))}
@@ -112,7 +112,7 @@ export default function ProjectsPage() {
                           {project.updates.map((update, idx) => (
                             <div key={idx} className="bg-gray-50 p-4 rounded-lg">
                               <div className="flex items-center space-x-2 mb-2">
-                                <span className="text-sm text-oda-green font-semibold">
+                                <span className="text-sm text-oda-blue font-semibold">
                                   {update.date}
                                 </span>
                                 <span className="text-sm text-gray-500">•</span>

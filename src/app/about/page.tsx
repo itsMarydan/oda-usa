@@ -4,7 +4,7 @@ import organizationData from '@/data/organization.json';
 export default function AboutPage() {
   return (
     <div className="min-h-screen">
-      <section className="bg-gradient-to-br from-oda-green to-oda-green/80 text-white section-padding">
+      <section className="bg-gradient-to-br from-oda-blue to-oda-blue/80 text-white section-padding">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="mb-6 text-white">About {organizationData.shortName}</h1>
@@ -27,7 +27,7 @@ export default function AboutPage() {
                 meaningful development.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed">
-                As a registered <strong className="text-oda-green">{organizationData.taxStatus} nonprofit organization</strong>,
+                As a registered <strong className="text-oda-blue">{organizationData.taxStatus} nonprofit organization</strong>,
                 we maintain the highest standards of transparency and accountability in all our operations. Our
                 headquarters is located in {organizationData.headquarters.city}, {organizationData.headquarters.state},
                 with members across the United States and Canada.
@@ -39,7 +39,7 @@ export default function AboutPage() {
               <div className="space-y-4">
                 {organizationData.objectives.map((objective, index) => (
                   <div key={index} className="flex items-start space-x-3">
-                    <CheckCircle className="w-6 h-6 text-oda-green flex-shrink-0 mt-1" />
+                    <CheckCircle className="w-6 h-6 text-oda-blue flex-shrink-0 mt-1" />
                     <p className="text-lg text-gray-700">{objective}</p>
                   </div>
                 ))}
@@ -49,7 +49,7 @@ export default function AboutPage() {
             <div className="grid md:grid-cols-2 gap-8 mb-12">
               <div className="bg-oda-cream p-8 rounded-xl">
                 <h3 className="text-2xl font-semibold text-oda-brown mb-4">Our Motto</h3>
-                <p className="text-oda-green text-xl font-semibold mb-2">
+                <p className="text-oda-blue text-xl font-semibold mb-2">
                   {organizationData.tagline}
                 </p>
                 <p className="text-gray-700 italic">
@@ -61,7 +61,7 @@ export default function AboutPage() {
                 <h3 className="text-2xl font-semibold text-oda-brown mb-4">Official Colors</h3>
                 <div className="flex items-center space-x-4 mb-3">
                   <div className="flex items-center space-x-2">
-                    <div className="w-8 h-8 bg-oda-green rounded-full border-2 border-white shadow-sm"></div>
+                    <div className="w-8 h-8 bg-oda-blue rounded-full border-2 border-white shadow-sm"></div>
                     <span className="text-gray-700 font-medium">Green</span>
                   </div>
                   <div className="flex items-center space-x-2">

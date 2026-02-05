@@ -28,7 +28,7 @@ export default function LeadershipPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
             {leadershipData.executiveCommittee.map((member) => (
               <div key={member.id} className="card p-6 text-center">
-                <div className="w-32 h-32 mx-auto mb-4 bg-gradient-to-br from-oda-green to-oda-sky rounded-full flex items-center justify-center text-white text-3xl font-bold">
+                <div className="w-32 h-32 mx-auto mb-4 bg-gradient-to-br from-oda-blue to-oda-sky rounded-full flex items-center justify-center text-white text-3xl font-bold">
                   {member.name.charAt(0)}
                 </div>
                 <div className="text-sm text-oda-gold font-semibold mb-1">
@@ -86,8 +86,8 @@ export default function LeadershipPage() {
 
           <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
             <div className="bg-white p-8 rounded-xl shadow-md">
-              <div className="w-16 h-16 bg-oda-green/10 rounded-full flex items-center justify-center mb-4 mx-auto">
-                <Users className="w-8 h-8 text-oda-green" />
+              <div className="w-16 h-16 bg-oda-blue/10 rounded-full flex items-center justify-center mb-4 mx-auto">
+                <Users className="w-8 h-8 text-oda-blue" />
               </div>
               <h3 className="text-xl font-semibold text-oda-brown mb-3 text-center">
                 General Assembly

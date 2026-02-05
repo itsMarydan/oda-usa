@@ -31,7 +31,7 @@ export default function MembershipPage() {
 
   return (
     <div className="min-h-screen">
-      <section className="bg-gradient-to-br from-oda-sky to-oda-green text-white section-padding">
+      <section className="bg-gradient-to-br from-oda-blue to-oda-brown text-white section-padding">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="mb-6 text-white">Become a Member</h1>
@@ -50,7 +50,7 @@ export default function MembershipPage() {
               <div className="space-y-3">
                 {membershipData.eligibility.map((criterion, index) => (
                   <div key={index} className="flex items-start space-x-3">
-                    <CheckCircle className="w-6 h-6 text-oda-green flex-shrink-0 mt-1" />
+                    <CheckCircle className="w-6 h-6 text-oda-blue flex-shrink-0 mt-1" />
                     <p className="text-lg text-gray-700">{criterion}</p>
                   </div>
                 ))}
@@ -60,13 +60,13 @@ export default function MembershipPage() {
             <div className="grid md:grid-cols-2 gap-6 mb-12">
               <div className="bg-oda-cream p-8 rounded-xl">
                 <div className="flex items-center space-x-3 mb-4">
-                  <DollarSign className="w-8 h-8 text-oda-green" />
+                  <DollarSign className="w-8 h-8 text-oda-blue" />
                   <h3 className="text-2xl font-semibold text-oda-brown">Membership Fees</h3>
                 </div>
                 <div className="space-y-4">
                   <div className="pb-4 border-b border-gray-300">
                     <div className="text-sm text-gray-600 mb-1">Application Fee (One-time)</div>
-                    <div className="text-3xl font-bold text-oda-green">
+                    <div className="text-3xl font-bold text-oda-blue">
                       ${membershipData.fees.application.amount}
                     </div>
                     <div className="text-xs text-gray-500 mt-1">
@@ -93,15 +93,15 @@ export default function MembershipPage() {
                 </div>
               </div>
 
-              <div className="bg-oda-green/5 p-8 rounded-xl border-2 border-oda-green">
+              <div className="bg-oda-blue/5 p-8 rounded-xl border-2 border-oda-blue">
                 <div className="flex items-center space-x-3 mb-4">
-                  <Award className="w-8 h-8 text-oda-green" />
+                  <Award className="w-8 h-8 text-oda-blue" />
                   <h3 className="text-2xl font-semibold text-oda-brown">Member Benefits</h3>
                 </div>
                 <ul className="space-y-3">
                   {membershipData.benefits.map((benefit, index) => (
                     <li key={index} className="flex items-start space-x-2">
-                      <CheckCircle className="w-5 h-5 text-oda-green flex-shrink-0 mt-0.5" />
+                      <CheckCircle className="w-5 h-5 text-oda-blue flex-shrink-0 mt-0.5" />
                       <span className="text-gray-700">{benefit}</span>
                     </li>
                   ))}
@@ -147,7 +147,7 @@ export default function MembershipPage() {
                     value={formData.firstName}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-oda-green focus:border-transparent"
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-oda-blue focus:border-transparent"
                   />
                 </div>
                 <div>
@@ -161,7 +161,7 @@ export default function MembershipPage() {
                     value={formData.lastName}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-oda-green focus:border-transparent"
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-oda-blue focus:border-transparent"
                   />
                 </div>
               </div>
@@ -178,7 +178,7 @@ export default function MembershipPage() {
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-oda-green focus:border-transparent"
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-oda-blue focus:border-transparent"
                   />
                 </div>
                 <div>
@@ -192,7 +192,7 @@ export default function MembershipPage() {
                     value={formData.phone}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-oda-green focus:border-transparent"
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-oda-blue focus:border-transparent"
                   />
                 </div>
               </div>
@@ -209,7 +209,7 @@ export default function MembershipPage() {
                   onChange={handleChange}
                   required
                   placeholder="e.g., Minnesota, Ontario"
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-oda-green focus:border-transparent"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-oda-blue focus:border-transparent"
                 />
               </div>
 
@@ -225,7 +225,7 @@ export default function MembershipPage() {
                   onChange={handleChange}
                   required
                   placeholder="e.g., Born in Okpella, Parent from Okpella, Spouse of Okpella indigene"
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-oda-green focus:border-transparent"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-oda-blue focus:border-transparent"
                 />
               </div>
 
@@ -239,7 +239,7 @@ export default function MembershipPage() {
                   value={formData.membershipType}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-oda-green focus:border-transparent"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-oda-blue focus:border-transparent"
                 >
                   <option value="single">Single ($150/year)</option>
                   <option value="married">Married Couple ($300/year)</option>
@@ -257,7 +257,7 @@ export default function MembershipPage() {
                   onChange={handleChange}
                   rows={4}
                   placeholder="Tell us more about your interest in joining ODA-USA..."
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-oda-green focus:border-transparent"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-oda-blue focus:border-transparent"
                 />
               </div>
 
