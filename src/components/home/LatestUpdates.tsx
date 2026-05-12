@@ -1,8 +1,9 @@
 import Link from 'next/link';
 import { Calendar, ArrowRight } from 'lucide-react';
-import announcementsData from '@/data/announcements.json';
+import { getAnnouncements } from '@/sanity/fetch';
 
-export default function LatestUpdates() {
+export default async function LatestUpdates() {
+  const announcementsData = await getAnnouncements();
   const updates = announcementsData.homepage.slice(0, 3);
 
   return (

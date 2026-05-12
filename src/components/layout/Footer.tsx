@@ -1,9 +1,11 @@
 import Link from 'next/link';
 import { Facebook, Instagram, Twitter, Mail, Phone, MapPin } from 'lucide-react';
-import organizationData from '@/data/organization.json';
+import type organizationDataType from '@/data/organization.json';
 import navigationData from '@/data/navigation.json';
 
-export default function Footer() {
+type Props = { organizationData: typeof organizationDataType };
+
+export default function Footer({ organizationData }: Props) {
   const currentYear = new Date().getFullYear();
 
   return (

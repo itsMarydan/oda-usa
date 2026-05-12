@@ -5,9 +5,11 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Menu, X } from 'lucide-react';
 import navigationData from '@/data/navigation.json';
-import organizationData from '@/data/organization.json';
+import type organizationDataType from '@/data/organization.json';
 
-export default function Header() {
+type Props = { organizationData: typeof organizationDataType };
+
+export default function Header({ organizationData }: Props) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const pathname = usePathname();

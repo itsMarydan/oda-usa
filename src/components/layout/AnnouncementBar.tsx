@@ -3,12 +3,13 @@
 import Link from 'next/link';
 import { X } from 'lucide-react';
 import { useState } from 'react';
-import announcementsData from '@/data/announcements.json';
+type ActiveAnnouncement = { id?: string; text: string; link?: string };
+type Props = { active: ActiveAnnouncement[] };
 
-export default function AnnouncementBar() {
+export default function AnnouncementBar({ active }: Props) {
   const [isVisible, setIsVisible] = useState(true);
 
-  const activeAnnouncement = announcementsData.active[0];
+  const activeAnnouncement = active[0];
 
   if (!isVisible || !activeAnnouncement) return null;
 
