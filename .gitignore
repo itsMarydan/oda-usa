@@ -26,3 +26,5 @@ node_modules
 .claude
 .bolt
 .vercel
+out
+tsconfig.tsbuildinfo

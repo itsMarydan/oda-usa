@@ -1,22 +1,38 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { ArrowRight, Heart, Users, BookOpen } from 'lucide-react';
-import organizationData from '@/data/organization.json';
+import { getSiteSettings } from '@/sanity/fetch';
 
-export default function Hero() {
+export default async function Hero() {
+  const organizationData = await getSiteSettings();
+  const heroImage = (organizationData as { heroImage?: string }).heroImage;
+
   return (
     <section className="relative bg-oda-sky overflow-hidden">
-      {/* Geometric pattern for visual interest */}
-      <div className="absolute inset-0">
-        <div className="absolute inset-0 opacity-[0.15]" style={{
-          backgroundImage: 'radial-gradient(circle at 1px 1px, #4A90E2 1px, transparent 0)',
-          backgroundSize: '20px 20px'
-        }} />
-        {/* Decorative shapes */}
-        <div className="absolute top-10 left-10 w-20 h-20 border-4 border-oda-blue/10 rounded-full" />
-        <div className="absolute top-32 right-20 w-12 h-12 border-4 border-oda-gold/15 rounded-full" />
-        <div className="absolute bottom-20 left-1/4 w-16 h-16 border-4 border-oda-blue/10 rounded-full" />
-        <div className="absolute bottom-32 right-1/3 w-8 h-8 bg-oda-gold/10 rounded-full" />
-      </div>
+      {heroImage ? (
+        <div className="absolute inset-0">
+          <Image
+            src={heroImage}
+            alt=""
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-oda-sky/95" />
+        </div>
+      ) : (
+        <div className="absolute inset-0">
+          <div className="absolute inset-0 opacity-[0.15]" style={{
+            backgroundImage: 'radial-gradient(circle at 1px 1px, #4A90E2 1px, transparent 0)',
+            backgroundSize: '20px 20px'
+          }} />
+          <div className="absolute top-10 left-10 w-20 h-20 border-4 border-oda-blue/10 rounded-full" />
+          <div className="absolute top-32 right-20 w-12 h-12 border-4 border-oda-gold/15 rounded-full" />
+          <div className="absolute bottom-20 left-1/4 w-16 h-16 border-4 border-oda-blue/10 rounded-full" />
+          <div className="absolute bottom-32 right-1/3 w-8 h-8 bg-oda-gold/10 rounded-full" />
+        </div>
+      )}
 
       <div className="container-custom section-padding relative">
         <div className="max-w-4xl mx-auto text-center">
