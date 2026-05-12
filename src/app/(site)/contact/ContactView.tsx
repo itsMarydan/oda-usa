@@ -6,6 +6,8 @@ import type organizationDataType from '@/data/organization.json';
 
 type Props = { organizationData: typeof organizationDataType };
 
+type SubmitState = 'idle' | 'submitting' | 'success' | 'error';
+
 export default function ContactView({ organizationData }: Props) {
   const [formData, setFormData] = useState({
     name: '',
@@ -14,11 +16,29 @@ export default function ContactView({ organizationData }: Props) {
     subject: '',
     message: '',
   });
+  const [status, setStatus] = useState<SubmitState>('idle');
+  const [errorMessage, setErrorMessage] = useState('');
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
-    alert('Thank you for your message! This is a demo form. In production, this would send your message to ODA-USA.');
+    setStatus('submitting');
+    setErrorMessage('');
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      });
+      if (!res.ok) {
+        const data = await res.json().catch(() => ({}));
+        throw new Error(data.error || 'Submission failed');
+      }
+      setStatus('success');
+      setFormData({ name: '', email: '', phone: '', subject: '', message: '' });
+    } catch (err) {
+      setStatus('error');
+      setErrorMessage(err instanceof Error ? err.message : 'Submission failed');
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
@@ -203,11 +223,23 @@ export default function ContactView({ organizationData }: Props) {
 
                 <button
                   type="submit"
-                  className="btn-primary w-full inline-flex items-center justify-center space-x-2"
+                  disabled={status === 'submitting'}
+                  className="btn-primary w-full inline-flex items-center justify-center space-x-2 disabled:opacity-60 disabled:cursor-not-allowed"
                 >
                   <Send className="w-5 h-5" />
-                  <span>Send Message</span>
+                  <span>{status === 'submitting' ? 'Sending…' : 'Send Message'}</span>
                 </button>
+
+                {status === 'success' && (
+                  <div className="rounded-lg bg-green-50 border border-green-200 p-4 text-green-900 text-sm">
+                    Thanks — your message is in. The team will get back to you within a few days.
+                  </div>
+                )}
+                {status === 'error' && (
+                  <div className="rounded-lg bg-red-50 border border-red-200 p-4 text-red-900 text-sm">
+                    {errorMessage || 'Something went wrong. Please try again or email us directly.'}
+                  </div>
+                )}
               </form>
             </div>
           </div>

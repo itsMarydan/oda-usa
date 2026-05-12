@@ -7,10 +7,44 @@ const SINGLETON_TYPES = new Set([
   'membershipPage',
 ]);
 
+const SUBMISSION_TYPES = new Set([
+  'contactSubmission',
+  'membershipApplication',
+]);
+
+export const isSubmission = (type: string) => SUBMISSION_TYPES.has(type);
+
 export const structure: StructureResolver = (S) =>
   S.list()
     .title('ODA-USA Content')
     .items([
+      S.listItem()
+        .title('Inbox')
+        .child(
+          S.list()
+            .title('Submissions')
+            .items([
+              S.listItem()
+                .title('Contact Messages')
+                .schemaType('contactSubmission')
+                .child(
+                  S.documentTypeList('contactSubmission')
+                    .title('Contact Messages')
+                    .defaultOrdering([{ field: '_createdAt', direction: 'desc' }])
+                ),
+              S.listItem()
+                .title('Membership Applications')
+                .schemaType('membershipApplication')
+                .child(
+                  S.documentTypeList('membershipApplication')
+                    .title('Membership Applications')
+                    .defaultOrdering([{ field: '_createdAt', direction: 'desc' }])
+                ),
+            ])
+        ),
+
+      S.divider(),
+
       S.listItem()
         .title('Site Settings')
         .id('siteSettings')

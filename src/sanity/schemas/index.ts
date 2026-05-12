@@ -7,6 +7,8 @@ import { project } from './project';
 import { culturePage } from './culturePage';
 import { libraryPage } from './libraryPage';
 import { membershipPage } from './membershipPage';
+import { contactSubmission } from './contactSubmission';
+import { membershipApplication } from './membershipApplication';
 
 export const schemaTypes = [
   siteSettings,
@@ -18,4 +20,6 @@ export const schemaTypes = [
   project,
   leader,
   pastPresident,
+  contactSubmission,
+  membershipApplication,
 ];

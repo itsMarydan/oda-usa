@@ -6,22 +6,44 @@ import type membershipDataType from '@/data/membership.json';
 
 type Props = { membershipData: typeof membershipDataType };
 
-export default function MembershipView({ membershipData }: Props) {
-  const [formData, setFormData] = useState({
-    firstName: '',
-    lastName: '',
-    email: '',
-    phone: '',
-    state: '',
-    okpellaConnection: '',
-    membershipType: 'single',
-    additionalInfo: '',
-  });
+type SubmitState = 'idle' | 'submitting' | 'success' | 'error';
 
-  const handleSubmit = (e: React.FormEvent) => {
+const EMPTY_FORM = {
+  firstName: '',
+  lastName: '',
+  email: '',
+  phone: '',
+  state: '',
+  okpellaConnection: '',
+  membershipType: 'single',
+  additionalInfo: '',
+};
+
+export default function MembershipView({ membershipData }: Props) {
+  const [formData, setFormData] = useState(EMPTY_FORM);
+  const [status, setStatus] = useState<SubmitState>('idle');
+  const [errorMessage, setErrorMessage] = useState('');
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
-    alert('Thank you for your interest! This is a demo form. In production, this would submit your application.');
+    setStatus('submitting');
+    setErrorMessage('');
+    try {
+      const res = await fetch('/api/membership/apply', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      });
+      if (!res.ok) {
+        const data = await res.json().catch(() => ({}));
+        throw new Error(data.error || 'Submission failed');
+      }
+      setStatus('success');
+      setFormData(EMPTY_FORM);
+    } catch (err) {
+      setStatus('error');
+      setErrorMessage(err instanceof Error ? err.message : 'Submission failed');
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
@@ -263,9 +285,24 @@ export default function MembershipView({ membershipData }: Props) {
                 />
               </div>
 
-              <button type="submit" className="btn-primary w-full">
-                Submit Application
+              <button
+                type="submit"
+                disabled={status === 'submitting'}
+                className="btn-primary w-full disabled:opacity-60 disabled:cursor-not-allowed"
+              >
+                {status === 'submitting' ? 'Submitting…' : 'Submit Application'}
               </button>
+
+              {status === 'success' && (
+                <div className="rounded-lg bg-green-50 border border-green-200 p-4 text-green-900 text-sm">
+                  Thank you for applying. The membership committee will review your application and reach out soon.
+                </div>
+              )}
+              {status === 'error' && (
+                <div className="rounded-lg bg-red-50 border border-red-200 p-4 text-red-900 text-sm">
+                  {errorMessage || 'Something went wrong. Please try again or contact us directly.'}
+                </div>
+              )}
 
               <p className="text-sm text-gray-500 text-center">
                 Application fee of ${membershipData.fees.application.amount} will be collected separately upon approval.
